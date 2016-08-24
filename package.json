@@ -4,7 +4,8 @@
   "description": "Simple Gulp/Bootstrap based baqend starter kit",
   "main": "gulpfile.js",
   "scripts": {
-    "serve": "gulp"
+    "serve": "gulp",
+    "gulp": "gulp"
   },
   "author": "Baqend",
   "license": "ISC",
