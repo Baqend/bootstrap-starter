@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+
+    {{#if title}}
+      <title>{{title}}</title>
+    {{else}}
+      <title>Title</title>
+    {{/if}}
+
+    <!-- build:css css/app.css -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- endbuild -->
+</head>
+
+<body data-spy="scroll" data-target=".spyed" id="top">
+
+<div class="navbar navbar-default invisible-bg navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+                <button type="button" class="navbar-toggle btn-menu" data-toggle="collapse" data-target=".navbar-collapse"></button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Start</a></li>
+          </ul>
+        </div>
+
+    </div>
+</div>

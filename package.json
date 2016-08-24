@@ -1,0 +1,42 @@
+{
+  "name": "baqend-bootstrap-starter",
+  "version": "1.0.0",
+  "description": "Simple Gulp/Bootstrap based baqend starter kit",
+  "main": "gulpfile.js",
+  "scripts": {
+    "serve": "gulp"
+  },
+  "author": "Baqend",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "baqend": "^2.2.1",
+    "bootstrap": "^3.3.7",
+    "connect-livereload": "^0.5.4",
+    "critical": "^0.7.3",
+    "del": "^2.2.2",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.9",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-gzip": "1.4.0",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-hb": "^5.1.0",
+    "gulp-if": "~2.0.1",
+    "gulp-imagemin": "~3.0.1",
+    "gulp-less": "~3.1.0",
+    "gulp-minify-html": "~1.0.6",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-usemin": "^0.3.23",
+    "gulp-util": "^3.0.7",
+    "gulp-wrap": "^0.13.0",
+    "run-sequence": "^1.2.2",
+    "tiny-lr": "^0.2.1"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.5"
+  }
+}
