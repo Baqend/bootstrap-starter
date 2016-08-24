@@ -16,5 +16,6 @@ After, run
 
     $ gulp
     
-...if you need a local server. Folder **build** serving at [http://localhost:8888](http://localhost:8888)
+...for a local server with live-reloading anytime you change a file: [http://localhost:8888](http://localhost:8888)
 
+If gulp cannot be found, you need to install it globally with `npm install -g gulp`. If you do not have npm installed, [get it here](https://nodejs.org/en/).
