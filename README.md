@@ -13,7 +13,7 @@ With this starter project you can easily build application based on:
     $ cd bootstrap-starter
     $ npm install
     
-After, run
+Afterwards, run
 
     $ gulp
     

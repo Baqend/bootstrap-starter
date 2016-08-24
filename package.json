@@ -11,7 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.4.0",
-    "baqend": "^2.2.1",
+    "baqend": "^2.2.3",
     "bootstrap": "^3.3.7",
     "connect-livereload": "^0.5.4",
     "critical": "^0.7.3",

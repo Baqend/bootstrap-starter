@@ -1,0 +1,5 @@
+{
+    app : 'felix-test',
+    user : 'felix.gessert+test@gmail.com',
+    pw : '123'
+}
