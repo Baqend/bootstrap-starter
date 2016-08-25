@@ -1,5 +1,5 @@
 # Bootstrap Baqend Starter Kit
-With this starter project you can easily build application based on:
+With [this starter project](https://github.com/Baqend/bootstrap-starter) you can easily build application based on:
 
 - [Bootstrap](http://getbootstrap.com/) for a responsive, easy-to-use frontend
 - [Baqend](http://www.baqend.com/) for hosting the application, storing data, managing users and executing server-side logic
@@ -44,7 +44,7 @@ You can easily deploy to Baqend via the command line, by installing it globally 
 
 Your app is now published and available, exposing your `index.html` the URL `your-app-name.app.baqend.com`.
 
-If you do not have `baqend` installed globally, zou can also use the local version of Baqend:
+If you do not have `baqend` installed globally, you can also use the local version of Baqend:
 
     $ npm run dist -- build
     $ npm run baqend -- login
@@ -55,7 +55,7 @@ If you do not have `baqend` installed globally, zou can also use the local versi
 ## Example Tooling for developing with this project
 
 1. Install [Webstorm](https://www.jetbrains.com/webstorm/).
-2. Fork this Github project to have your own repository.
+2. Fork [this Github project](https://github.com/Baqend/bootstrap-starter) to have your own repository.
 3. Clone your project via `git clone git@github.com:<your cloned repo>` and import that project folder via "File > New > Project from Existing Sources".
 3. **Or:** use the dialog "File > New > Project from Version Control > Github" instead.
 5. You can either use the Gulp plugin to run tasks or use the commands (e.g. `npm run gulp`) in the terminal.
