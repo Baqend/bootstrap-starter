@@ -11,6 +11,7 @@ var rename = require("gulp-rename");
 var gulpif = require("gulp-if");
 var hb = require('gulp-hb');
 var postcss = require('gulp-postcss');
+var yaml = require('js-yaml');
 
 var fs = require('fs');
 var runSequence = require('run-sequence');
@@ -161,11 +162,16 @@ gulp.task('dist', function (cb) {
     runSequence('clean', ['less', 'handlebars', 'copy'], ['html', 'fonts', 'images']/*,  'critical'*/, cb);
 });
 
-gulp.task('deploy', function (cb) {
-    var fileContent = fs.readFileSync("path/to/file.something", "utf8");
-    cli.account.login({username: 'felix.gessert+test@gmail.com', password: "baq4lem"}).then(function () {
-        cli.deploy({app: 'felix-test'})
+gulp.task('upload', function (cb) {
+    var data = yaml.safeLoad(fs.readFileSync(".baqend", "utf8"));
+    gutil.log(data);
+    cli.account.login({username: data.username, password: data.password}).then(function () {
+        return cli.deploy({app: data.app, fileDir : 'dist'});
+    }).then(function () {
+        gutil.log('Deployment successful');
     });
 });
 
 gulp.task('default', ['serve', 'less', 'handlebars', 'copy', 'watch']);
+
+gulp.task('deploy', ['dist', 'upload']);

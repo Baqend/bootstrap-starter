@@ -17,7 +17,7 @@ Afterwards, run
 
     $ gulp
     
-...for a local server with live-reloading anytime you change a file: [http://localhost:8888](http://localhost:8888)
+...for a local server with live-reloading anytime you change a file: [http://localhost:5000](http://localhost:5000)
 
 If gulp cannot be found, you need to install it globally with `npm install -g gulp` or if you do not want to install gulp globally `npm run gulp`. If you do not have npm installed, [get it here](https://nodejs.org/en/).
 
@@ -35,3 +35,28 @@ to match your Baqend app. If you do not have one yet, start [one for free](https
 The [Baqend guide](http://www.baqend.com/guide/) explains everything else you need to know.
 
 ## Deploy
+
+You can easily deploy to Baqend via the command line, by installing it globally with `npm install -g baqend`. Then:
+
+    $ gulp dist
+    $ baqend login
+    $ baqend --app your-app-name -f dist
+
+Your app is now published and available, exposing your `index.html` the URL `your-app-name.app.baqend.com`.
+
+If you do not have `baqend` installed globally, zou can also use the local version of Baqend:
+
+    $ npm run dist -- build
+    $ npm run baqend -- login
+    $ npm run baqend -- --app your-app-name -f dist
+
+**Note:** for now, you need an account registered via email, not via OAuth. If you do not have one, invite your email account via the *Collaboration* tab in the dashboard and use that account for the Baqend CLI.
+
+## Example Tooling for developing with this project
+
+1. Install [Webstorm](https://www.jetbrains.com/webstorm/).
+2. Fork this Github project to have your own repository.
+3. Clone your project via `git clone git@github.com:<your cloned repo>` and import that project folder via "File > New > Project from Existing Sources".
+3. **Or:** use the dialog "File > New > Project from Version Control > Github" instead.
+5. You can either use the Gulp plugin to run tasks or use the commands (e.g. `npm run gulp`) in the terminal.
+6. Run gulp default (resp. `npm run gulp`) and navigate to [http://localhost:5000](http://localhost:5000) to see that it works.
