@@ -58,5 +58,6 @@ If you do not have `baqend` installed globally, you can also use the local versi
 2. Fork [this Github project](https://github.com/Baqend/bootstrap-starter) to have your own repository.
 3. Clone your project via `git clone git@github.com:<your cloned repo>` and import that project folder via "File > New > Project from Existing Sources".
 3. **Or:** use the dialog "File > New > Project from Version Control > Github" instead.
+4. Run `npm install` in the project folder to install all dependencies.
 5. You can either use the Gulp plugin to run tasks or use the commands (e.g. `npm run gulp`) in the terminal.
 6. Run gulp default (resp. `npm run gulp`) and navigate to [http://localhost:5000](http://localhost:5000) to see that it works.
