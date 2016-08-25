@@ -40,7 +40,7 @@ You can easily deploy to Baqend via the command line, by installing it globally 
 
     $ gulp dist
     $ baqend login
-    $ baqend --app your-app-name -f dist
+    $ baqend deploy --app your-app-name -f dist
 
 Your app is now published and available, exposing your `index.html` the URL `your-app-name.app.baqend.com`.
 
@@ -48,7 +48,7 @@ If you do not have `baqend` installed globally, you can also use the local versi
 
     $ npm run dist -- build
     $ npm run baqend -- login
-    $ npm run baqend -- --app your-app-name -f dist
+    $ npm run baqend -- deploy --app your-app-name -f dist
 
 **Note:** for now, you need an account registered via email, not via OAuth. If you do not have one, invite your email account via the *Collaboration* tab in the dashboard and use that account for the Baqend CLI.
 
